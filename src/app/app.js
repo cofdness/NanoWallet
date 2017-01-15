@@ -1,6 +1,7 @@
 import angular from 'angular';
 import $ from 'jquery';
 
+
 // Import our app config files
 import constants from './config/app.constants';
 import appConfig from './config/app.config';
@@ -87,11 +88,11 @@ const requires = [
     'app.lang',
     'app.changelly'
 ];
-
-window.$ = window.jQuery = $;
+var jQuery
+window.$ = window.jQuery = jQuery  = $;
 
 // Load twitter bootstrap with require or jQuery is not defined
-require('bootstrap');
+require('bootstrap')
 
 // Mount on window
 window.app = angular.module('app', requires);
