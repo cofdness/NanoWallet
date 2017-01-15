@@ -34,8 +34,10 @@ class LoginCtrl {
             'password': '',
             'privateKey': ''
         };
+        $timeout( function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
 
-         $('[data-toggle="tooltip"]').tooltip()
 
     }
 
