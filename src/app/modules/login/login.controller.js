@@ -35,6 +35,8 @@ class LoginCtrl {
             'privateKey': ''
         };
 
+         $('[data-toggle="tooltip"]').tooltip()
+
     }
 
     /**
